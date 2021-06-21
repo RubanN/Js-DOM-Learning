@@ -187,9 +187,9 @@ console.log(document.querySelector('a').firstChild.nodeValue); //logs 'Hi'
 
 
 //3.3 Creating Elements
-var elen = document.createElement(textarea);
-document.body.appendChild(elen);
-console.log(document.querySelector('textarea')); //verify it's now in the DOM
+// var elen = document.createElement(textarea);
+// document.body.appendChild(elen);
+// console.log(document.querySelector('textarea')); //verify it's now in the DOM
 
 
 
