@@ -99,97 +99,97 @@ console.log(document.querySelector('a').firstChild.nodeValue); //logs 'Hi'
 
 
 
-// var element = document.createElement('div');
-// console.log(element,element.nodeType);
-// var text = document.createTextNode('Hi');
-// console.log(text,text.nodeType);
+var element = document.createElement('div');
+console.log(element,element.nodeType);
+var text = document.createTextNode('Hi');
+console.log(text,text.nodeType);
 
 // Creating and adding element and text nodes to the DOM using JavaScript strings
 //innerHTML,outerHTML,textContent
 
-// document.getElementById("A").innerHTML = "<strong>HI</strong>"
-// document.getElementById('B').outerHTML = '<div id="B" class="new">Whats Shaking</div>'
-// document.getElementById('C').textContent = 'dude';
-// document.getElementById('D').innerText = 'Keep it';
-// document.getElementById('E').outerText = 'real!';
-// console.log(document.body.innerHTML);
+document.getElementById("A").innerHTML = "<strong>HI</strong>"
+document.getElementById('B').outerHTML = '<div id="B" class="new">Whats Shaking</div>'
+document.getElementById('C').textContent = 'dude';
+document.getElementById('D').innerText = 'Keep it';
+document.getElementById('E').outerText = 'real!';
+console.log(document.body.innerHTML);
 
 //insertAdjacentHTML
-// var elm = document.getElementById('elm');
-// elm.insertAdjacentElement('beforebegin','<span>Hey</span>')
-// elm.insertAdjacentHTML('afterbegin', '<span>dude-</span>'); 
-// elm.insertAdjacentHTML('beforeend', '<span>-are</span>'); 
-// elm.insertAdjacentHTML('afterend', '<span>-you?</span>');  
-// console.log(document.body.innerHTML);
-// console.log(document.getElementById('A').innerHTML); //logs '<i>Hi</i>'
+var elm = document.getElementById('elm');
+elm.insertAdjacentElement('beforebegin','<span>Hey</span>')
+elm.insertAdjacentHTML('afterbegin', '<span>dude-</span>'); 
+elm.insertAdjacentHTML('beforeend', '<span>-are</span>'); 
+elm.insertAdjacentHTML('afterend', '<span>-you?</span>');  
+console.log(document.body.innerHTML);
+console.log(document.getElementById('A').innerHTML); //logs '<i>Hi</i>'
 
 
 //Extracting parts of the DOM tree as JavaScript strings
 
-// console.log(document.getElementById('A').innerHTML); //logs '<i>Hi</i>'
+console.log(document.getElementById('A').innerHTML); //logs '<i>Hi</i>'
 
 
 //Adding node objects to the DOM using appendChild()& insertBefore()
-// var elementNode = document.createElement('strong');
-// var textnode = document.createTextNode('dude');
-//append these nodes to the DOM
-// document.querySelector('p').appendChild(elementNode);
-// document.querySelector('strong').appendChild(textNode);
-// console.log(document.body.innerHTML);
+var elementNode = document.createElement('strong');
+var textnode = document.createTextNode('dude');
+// append these nodes to the DOM
+document.querySelector('p').appendChild(elementNode);
+document.querySelector('strong').appendChild(textNode);
+console.log(document.body.innerHTML);
 
-// var text1 = document.createTextNode("1");
-// var li = document.createElement('li');
-// li.appendChild(text1);
-// var ul =document.querySelector('ul');
-// ul.insertBefore(li,ul.firstChild)
-// console.log(document.body.innerHTML);
+var text1 = document.createTextNode("1");
+var li = document.createElement('li');
+li.appendChild(text1);
+var ul =document.querySelector('ul');
+ul.insertBefore(li,ul.firstChild)
+console.log(document.body.innerHTML);
 
 //Removing and replacing nodes using removeChild() and replaceChild()
 
 // remove element node
-// var divA = document.getElementById("A");
-// divA.parentNode.removeChild(divA)
- //remove text node
-// var divB = document.getElementById("B").firstChild(divB);
-// divB.parentNode.removeChild(divB)
+var divA = document.getElementById("A");
+divA.parentNode.removeChild(divA)
+//  remove text node
+var divB = document.getElementById("B").firstChild(divB);
+divB.parentNode.removeChild(divB)
 
 //Replacing an element or text node 
 
 
-// var divA = document.getElementById("A");
-// var newSpan = document.createElement("span");
-// newSpan.textContent ="Ruban";
-// divA.parentNode.removeChild(newSpan,divA);
+var divA = document.getElementById("A");
+var newSpan = document.createElement("span");
+newSpan.textContent ="Ruban";
+divA.parentNode.removeChild(newSpan,divA);
 
 
 
 //2.CHAPTER
 
 //Document Nodes
-// console.log(window.document.constructor); //logs function HTMLDocument() { [native code] }
-// console.log(window.document.nodeType); //logs 9, which is a numeric key mapping to DOCUMENT_NODE
+console.log(window.document.constructor); //logs function HTMLDocument() { [native code] }
+console.log(window.document.nodeType); //logs 9, which is a numeric key mapping to DOCUMENT_NODE
 
 // document owm properties
-// console.log(object.keys(document).sort());
+console.log(object.keys(document).sort());
 
-// var d = document;
-// console.log('title = ' +d.title);
-// console.log('url = ' +d.URL);
-// console.log('referrer = ' +d.referrer);
-// console.log('lastModified = ' +d.lastModified);
+var d = document;
+console.log('title = ' +d.title);
+console.log('url = ' +d.URL);
+console.log('referrer = ' +d.referrer);
+console.log('lastModified = ' +d.lastModified);
 
 //logs either BackCompat (Quirks Mode) or CSS1Compat (Strict Mode)
-// console.log('compatibility mode = ' +d.compatMode);
-// console.log(document.childNodes[0].nodeType); //logs 10, which is a numeric key mapping to DOCUMENT_TYPE_NODE
+console.log('compatibility mode = ' +d.compatMode);
+console.log(document.childNodes[0].nodeType); //logs 10, which is a numeric key mapping to DOCUMENT_TYPE_NODE
 
 //Chapter 3 - Element Nodes
-// console.log(document.querySelector('a').constructor);
+console.log(document.querySelector('a').constructor);
 
 
 //3.3 Creating Elements
-// var elen = document.createElement(textarea);
-// document.body.appendChild(elen);
-// console.log(document.querySelector('textarea')); //verify it's now in the DOM
+var elen = document.createElement(textarea);
+document.body.appendChild(elen);
+console.log(document.querySelector('textarea')); //verify it's now in the DOM
 
 
 
